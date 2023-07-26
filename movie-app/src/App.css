@@ -1,0 +1,52 @@
+body{
+  
+  background: #141414;
+  color: #ffff;
+}
+.movie-app > .row{
+
+overflow-x: auto;
+flex-wrap: nowrap;
+
+}
+#imgg{
+ height:20em;
+ 
+ border-radius: 10px;
+ 
+}
+.image-container{
+
+  position: relative;
+  transition: transform 0.2s;
+}
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+
+  opacity: 1;
+}
+.overlay{
+  position: absolute;
+  background: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.fav{
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 800;
+}
+.r-fav{
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 800;
+}
